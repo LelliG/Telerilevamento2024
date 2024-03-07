@@ -7,9 +7,9 @@ C <- A + B
 
 #Arrays
 flowers <- c(3, 6, 9, 12, 15, 18)
-
 bees <- c(10, 16, 25, 42, 61, 73)
 
+#Plot
 plot(flowers, bees, pch=16,  col='blue', cex=2, xlab='Flowers', ylab='Bees') #(X,Y,Simbolo, Colore, Dimensione, LabelX,labelY)
 
 #Examples
