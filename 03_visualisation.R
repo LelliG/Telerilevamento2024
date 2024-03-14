@@ -51,7 +51,7 @@ plot(b3, col=clch)
 plot(b4, col=clch)
 plot(b8, col=clch)
 
-
-#stacksent<- c(b2,b3,b4,b8)
-
+#procedura per impilare immagini, stack----> singola immagine che contiene singoli elementi. In questo modo si ottiene immagine satellitare(insieme di diverse bande)
+stacksent<- c(b2,b3,b4,b8)
+plot(stacksent, clch)
 
