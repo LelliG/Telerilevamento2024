@@ -12,5 +12,5 @@ plot(mato)
 #caricamento file dolomiti unica banda, la b2(lunghezza d'onda del blu) Es. Acqua 
 b2<-im.import("sentinel.dolomites.b2.tif")
 #cambiare scala colori
-cl <- colorRampPalette(c("black","grey","light grey"))
+cl <- colorRampPalette(c("black","grey","light grey"))(3)
 plot(b2)
