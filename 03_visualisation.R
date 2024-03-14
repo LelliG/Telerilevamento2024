@@ -18,3 +18,7 @@ plot(b2, col=clg)
 #cambio scala colori
 cl_cyan <- colorRampPalette(c("magenta","cyan4","cyan"))(100)
 plot(b2, col=cl_cyan)
+
+# Vegetazione assorbe lunghezza blu per fotosintesi
+clch <- colorRampPalette(c("magenta","cyan4","cyan","chartreuse"))(100)
+plot(b2, col=clch)
