@@ -14,3 +14,7 @@ b2<-im.import("sentinel.dolomites.b2.tif")
 #cambiare scala colori (c(arraycolori))(numerosfumature)
 clg <- colorRampPalette(c("black","grey","light grey"))(3)
 plot(b2, col=clg)
+
+#cambio scala colori
+cl_cyan <- colorRampPalette(c("magenta","cyan4","cyan"))(100)
+plot(b2, col=cl_cyan)
