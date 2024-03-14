@@ -53,5 +53,9 @@ plot(b8, col=clch)
 
 #procedura per impilare immagini, stack----> singola immagine che contiene singoli elementi. In questo modo si ottiene immagine satellitare(insieme di diverse bande)
 stacksent<- c(b2,b3,b4,b8)
-plot(stacksent, clch)
+plot(stacksent, col=clch)
+#cancella device grafico precedente, ovvero il par
+dev.off()
+#selezionare righe e colonne. [] per selezionare la colonna=attributo. con matrici si usa doppia []
+plot(stacksent[[4]], col=clch)
 
