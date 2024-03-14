@@ -43,12 +43,15 @@ plot(b3, col=clch)
 plot(b4, col=clch)
 plot(b8, col=clch)
 
-#Exercise_Plot 4bands 1 row
+#Exercise_Plot 4bands su 1 sola row
 
 par(mfrow=c(1,4))
 plot(b2, col=clch)
 plot(b3, col=clch)
 plot(b4, col=clch)
 plot(b8, col=clch)
+
+
+#stacksent<- c(b2,b3,b4,b8)
 
 
