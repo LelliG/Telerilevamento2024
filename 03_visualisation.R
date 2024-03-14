@@ -27,3 +27,11 @@ plot(b2, col=clch)
 #b3 560 nm --> verde
 b3<-im.import("sentinel.dolomites.b3.tif")
 plot(b3, col=clch)
+
+#b4 --->rosso
+b4<-im.import("sentinel.dolomites.b4.tif")
+plot(b4, col=clch)
+
+#b8 --->rosso
+b8<-im.import("sentinel.dolomites.b8.tif")
+plot(b8, col=clch)
