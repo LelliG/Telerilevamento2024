@@ -9,6 +9,6 @@ mato <- im.import("matogrosso_ast_2006209_lrg.jpg")
 
 #plotting the data
 plot(mato)
-#caricamento file dolomiti unica banda, la b2
+#caricamento file dolomiti unica banda, la b2(lunghezza d'onda del blu)
 b2<-im.import("sentinel.dolomites.b2.tif")
 plot(b2)
