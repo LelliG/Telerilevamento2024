@@ -19,6 +19,11 @@ plot(b2, col=clg)
 cl_cyan <- colorRampPalette(c("magenta","cyan4","cyan"))(100)
 plot(b2, col=cl_cyan)
 
-# Vegetazione assorbe lunghezza blu per fotosintesi
+# Vegetazione assorbe lunghezza blu per fotosintesi, ma il viola è sicuramente anche vegetazione(bassa riflettanza)
 clch <- colorRampPalette(c("magenta","cyan4","cyan","chartreuse"))(100)
 plot(b2, col=clch)
+
+#importing additional band
+#b3 560 nm --> verde
+b3<-im.import("sentinel.dolomites.b3.tif")
+plot(b3, col=clch)
