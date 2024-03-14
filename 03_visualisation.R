@@ -43,7 +43,12 @@ plot(b3, col=clch)
 plot(b4, col=clch)
 plot(b8, col=clch)
 
+#Exercise_Plot 4bands 1 row
 
-
+par(mfrow=c(1,4))
+plot(b2, col=clch)
+plot(b3, col=clch)
+plot(b4, col=clch)
+plot(b8, col=clch)
 
 
