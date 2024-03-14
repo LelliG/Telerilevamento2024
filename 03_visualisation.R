@@ -35,3 +35,15 @@ plot(b4, col=clch)
 #b8 --->infrarosso
 b8<-im.import("sentinel.dolomites.b8.tif")
 plot(b8, col=clch)
+
+#Usiamo funzione par() per multiframe. par(mfrow==nriighe, mfcol=ncol). Questa funzione crea il grigliato, popolato in seguito dai 4 plot delle bande
+par(mfrow=c(2,2))
+plot(b2, col=clch)
+plot(b3, col=clch)
+plot(b4, col=clch)
+plot(b8, col=clch)
+
+
+
+
+
