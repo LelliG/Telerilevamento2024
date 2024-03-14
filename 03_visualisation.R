@@ -1,7 +1,7 @@
 library(terra)
 library(imageRy)
 
-#List of data avialable in imageRy
+#List of data avialable in imageRy, ogni funzione inizia con im.
 im.list()
 
 #importing data mato 2006
