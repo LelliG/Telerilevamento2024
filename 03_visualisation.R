@@ -72,6 +72,8 @@ plot(stacksent[[4]], col=clch)
 #stacksent[[4]]= b8 = nir (utile per identificare specie di piante)
 #SI ASSOCIANO LE BANDE ai colori RGB, STANDARD 3,2,1
 im.plotRGB(stacksent, 3, 2, 1)
+#metto infra al posto del red. Roccia riflette tutta la luce rimane bianca. Si differenzia la vedgetazione!!!
+im.plotRGB(stacksent, 4, 2, 1)
 
 
 
