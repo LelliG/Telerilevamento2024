@@ -76,6 +76,10 @@ im.plotRGB(stacksent, 3, 2, 1)
 im.plotRGB(stacksent, 4, 2, 1)
 
 
+#EX
+par(mfrow=c(1,2))
+im.plotRGB(stacksent, 3, 2, 1)
+im.plotRGB(stacksent, 4, 2, 1)
 
 
 
