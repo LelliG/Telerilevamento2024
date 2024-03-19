@@ -69,7 +69,7 @@ plot(stacksent[[4]], col=clch)
 #stacksent[[1]]= b2 = blue
 #stacksent[[2]]= b3= green
 #stacksent[[3]]= b4 = red
-#stacksent[[4]]= b8 = nir
+#stacksent[[4]]= b8 = nir (utile per identificare specie di piante)
 #SI ASSOCIANO LE BANDE ai colori RGB, STANDARD 3,2,1
 im.plotRGB(stacksent, 3, 2, 1)
 
