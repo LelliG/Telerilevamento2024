@@ -105,3 +105,8 @@ im.plotRGB(stacksent, 4, 2, 1) #NATURAL COLORS
 im.plotRGB(stacksent, 4, 3, 2) #NIR ON RED
 im.plotRGB(stacksent, 3, 4, 2) #NIR ON GREEN
 im.plotRGB(stacksent, 3, 2, 4) #NIR ON BLUE
+
+
+#funzione pairs per verificare che il bande visibile sono correlate, mentre con infrarosso no. Mostra correlazione anche con Pearson.
+pairs(stacksent)
+#per info su immagine basta scrivere nome, es. b2. N pixel classe, dimensione, risoluzione
