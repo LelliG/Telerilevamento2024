@@ -81,7 +81,27 @@ par(mfrow=c(1,2))
 im.plotRGB(stacksent, 3, 2, 1)
 im.plotRGB(stacksent, 4, 2, 1)
 
+dev.off()
+im.plotRGB(stacksent, 4, 3, 2)#infrarosso meno correlata alle altre banda
 
 
+#EX2
+par(mfrow=c(1,3))
+im.plotRGB(stacksent, 3, 2, 1)
+im.plotRGB(stacksent, 4, 2, 1)
+im.plotRGB(stacksent, 4, 3, 2)
 
+dev.off()
+#infrarosso VERDE
+im.plotRGB(stacksent, 3, 4, 2)
 
+dev.off()
+#nir su blu per suolo nudo, suolo nudo giallo
+im.plotRGB(stacksent, 3, 2, 4)
+
+#multiframe EX
+par(mfrow=c(2,2))
+im.plotRGB(stacksent, 4, 2, 1) #NATURAL COLORS
+im.plotRGB(stacksent, 4, 3, 2) #NIR ON RED
+im.plotRGB(stacksent, 3, 4, 2) #NIR ON GREEN
+im.plotRGB(stacksent, 3, 2, 4) #NIR ON BLUE
