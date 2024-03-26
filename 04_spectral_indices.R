@@ -30,9 +30,11 @@ dev.off
 
 par(mfrow=c(2,3))
 im.plotRGB(m1992, r=1, g=2, b=3) #1992 nir on red
-im.plotRGB(m1992, 2, 1, 3)#1992 on Green
+im.plotRGB(m1992, 2, 1, 3)#1992 nir on Green
 im.plotRGB(m1992, 2,3,1)#1992 nir on blue
 
 im.plotRGB(m2006, r=1, g=2, b=3) #12006nir on red
-im.plotRGB(m2006, 2, 1, 3)#2006 on Green
+im.plotRGB(m2006, 2, 1, 3)#2006 nir on Green
 im.plotRGB(m2006, 2,3,1)#2006 nir on blue
+
+#perche rifelttanza arriva fino 255 e non va fra zero e 1? presentazione
