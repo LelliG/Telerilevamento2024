@@ -34,4 +34,4 @@ perc1992 = prop1992*100#forest=83% human=17%
 f2006 <- freq(m2006c) #forest>>>>>>>>human
 tot2006 <- ncell(m2006c)
 prop2006 = f2006/ tot2006
-perc2006 = prop2006*100#forest=55% human=45%
+perc2006 = prop2006*100#forest=45% human=55%
