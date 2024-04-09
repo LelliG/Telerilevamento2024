@@ -35,3 +35,11 @@ f2006 <- freq(m2006c) #forest>>>>>>>>human
 tot2006 <- ncell(m2006c)
 prop2006 = f2006/ tot2006
 perc2006 = prop2006*100#forest=45% human=55%
+
+
+#Creation of dataset. Building dataframe
+Class <- c('Forest', 'Human')
+y1992 <- c(83,17)
+y2006 <- c(45, 55)
+tabout <- data.frame(Class, y1992, y2006)
+View(tabout)
