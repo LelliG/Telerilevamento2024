@@ -43,3 +43,20 @@ y1992 <- c(83,17)
 y2006 <- c(45, 55)
 tabout <- data.frame(Class, y1992, y2006)
 View(tabout)
+
+#Graph with ggplot2
+#1992
+p1 <- ggplot(tabout, aes(x=Class, y=y1992, color=Class)) + geom_bar(stat='identity', fill='grey')
+#2006
+p2 <- ggplot(tabout, aes(x=Class, y=y2006, color=Class)) + geom_bar(stat='identity', fill='grey')
+
+#Join the 2 graphs
+#install.packages('patchwork')
+library('patchwork')
+p1+p2
+#axes are have different ranges
+#1992
+p1 <- ggplot(tabout, aes(x=Class, y=y1992, color=Class)) + geom_bar(stat='identity', fill='grey')+ylim(c(0,100))
+#2006
+p2 <- ggplot(tabout, aes(x=Class, y=y2006, color=Class)) + geom_bar(stat='identity', fill='grey')+ylim(c(0,100))
+p1+p2
