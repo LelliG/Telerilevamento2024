@@ -14,7 +14,7 @@ sunc <- im.classify(sun, num_cluster=3)#numeri delle classi variano in base all'
 
 #classification on Mato in different eras
 m2006 <-im.import("matogrosso_ast_2006209_lrg.jpg")
-
+#the classifications are everytime different
 m1992c <- im.classify(m1992, num_cluster=2)
 #class 1 = human
 #class 2 = forest 
