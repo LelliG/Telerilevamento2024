@@ -26,52 +26,28 @@ plotRGB(eclissi, 3, 1, 3)
 # band differencing
 dif = eclissi[[1]] - eclissi[[2]]
 
-# import another image
+#ex
+dev.off()
 # Exercise: import another image from the net!
-cratere <- rast("cratere")
-im.plotRGB(cratere, 1, 2, 3)
-im.plotRGB(cratere, 2, 1, 3)
+er <- rast("italyflooding653_oli2_2023116_lrg.jpg")
+erfl <- rast("italyflooding653_oli_2023124_lrg.jpg")
+im.plotRGB(er, 1, 2, 3)
+
+im.plotRGB(erfl, 1, 2, 3)
+im.plotRGB(erfl, 2, 1, 3)
+
+dif = erfl-er
+im.plotRGB(dif, 1, 2, 3)
 
 
 
+# importing Copernicus data
+soil <- rast("c_gls_SSM1km_202404160000_CEURO_S1CSAR_V1.2.1.nc")
+plot(soil)
+plot(soil[[1]])
 
+# cropping data
+ext <- c(25, 35, 58, 62)
+soilcrop <- crop(soil, ext)
 
-
-
-
-library('terra')
-# set the working directory based on your path:
-# setwd("youtpath")
-# W***** users: C:\\path\Downloads -> C://path/Downloads
-# My own:
-setwd("/Users/gianlucalelli/Desktop/PhD/Corsi/Telerilevamento Geo-Ecologico")
-naja <- rast("najafiraq_etm_2003140_lrg.jpg")  # like in im.import()
-
-plotRGB(naja, r=1, g=2, b=3) # im-plotRGB
-
-# Exercise: Download the second image from the same site and import it in R
-najaaug <- rast("najafiraq_oli_2023219_lrg.jpg")
-plotRGB(najaaug, r=1, g=2, b=3)
-
-par(mfrow=c(2,1))
-plotRGB(naja, r=1, g=2, b=3) # im-plotRGB
-plotRGB(najaaug, r=1, g=2, b=3)
-
-# multitemporal change detection
-najadif = naja[[1]] - najaaug[[1]] 
-cl <- colorRampPalette(c("brown", "grey", "orange")) (100)
-plot(najadif, col=cl)
-
-# Download your own preferred image:
-typhoon <- rast("mawar_vir2_2023144_lrg.jpg")
-
-plotRGB(typhoon, r=1, g=2, b=3)
-plotRGB(typhoon, r=2, g=1, b=3)
-plotRGB(typhoon, r=3, g=2, b=1)
-
-
-# The Mato Grosso image can be downloaded directly from EO-NASA:
-
-mato <- rast("matogrosso_l5_1992219_lrg.jpg")
-plotRGB(mato, r=1, g=2, b=3) 
-plotRGB(mato, r=2, g=1, b=3) 
+plot(soilcrop)
