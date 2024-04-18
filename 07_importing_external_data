@@ -5,7 +5,6 @@ library(imageRy)
 
 setwd("/Users/gianlucalelli/Desktop/PhD/Corsi/Telerilevamento Geo-Ecologico")
 # make use of slash instead of backslash
-# Example: C://Documents/ instead of C:\\Documents\ 
 
 # read the data
 eclissi <- rast("eclissi.png") 
