@@ -1,8 +1,10 @@
+
+library('terra')
 # set the working directory based on your path:
 # setwd("youtpath")
 # W***** users: C:\\path\Downloads -> C://path/Downloads
 # My own:
-setwd("~/Downloads")
+setwd("/Users/gianlucalelli/Desktop/PhD/Corsi/Telerilevamento Geo-Ecologico")
 naja <- rast("najafiraq_etm_2003140_lrg.jpg")  # like in im.import()
 
 plotRGB(naja, r=1, g=2, b=3) # im-plotRGB
