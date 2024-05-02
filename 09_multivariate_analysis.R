@@ -24,3 +24,4 @@ perc_4=29.22522/tot*100
 
 vir <- colorRampPalette(viridis(7))(100)
 plot(pcimage, col=vir)
+plot(pcimage, col=plasma(100))
