@@ -1,0 +1,84 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+
+
+%Temi e colori
+\usetheme{Frankfurt}
+\usetheme{Hannover}     %sez laterali
+\usecolortheme{crane}
+\usecolortheme{beaver}
+
+
+\title{My first Presentation}
+\author{Gianluca Lelli}
+\date{May 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\begin{frame}{My first Slide}
+    \textit{My first slide}
+\end{frame}
+
+\begin{frame}{Itemize}
+\large{First \textbf{Itemize}:}
+
+    \begin{itemize}
+         \item My First;
+         \item My Second;
+         \item My Third
+    \end{itemize}
+\end{frame}
+
+\section{Formulas}
+\begin{frame}{Formulas used}
+In this thesis i made use of standard deviation as:
+
+\bigskip
+    \begin{equation}
+        \delta =\sqrt{\frac{\displaystyle\sum_{i=1}^N(x_i-\mu)^2}{N}}
+    \end{equation}
+\end{frame}
+
+
+
+
+
+\section{Results}
+\begin{frame}{Achieved Results}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\linewidth]{Dex.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Achieved Results beside}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\linewidth]{Dex.png}
+        \includegraphics[width=0.3\linewidth]{Dex.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Achieved Results beside MULTI}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\linewidth]{Dex.png}
+        \includegraphics[width=0.3\linewidth]{Dex.png} \\ %Dopppio Backslash per andare a capo fra figure
+        \includegraphics[width=0.3\linewidth]{Dex.png}
+        \includegraphics[width=0.3\linewidth]{Dex.png} 
+    \end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+\end{document}
