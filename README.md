@@ -20,3 +20,9 @@ No preview knowledge of R is required
 
 >**External link to the course**
 >[Unibo](https://www.unibo.it/sitoweb/duccio.rocchini)
+
+
+## Main package used(`=opt+9)
+``` {r}
+library(imageRy)
+```
